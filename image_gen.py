@@ -5,7 +5,7 @@ from skimage import io
 from PIL import Image
 
 
-api_key = os.getenv("API_API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_image(prompt, quality, resolution, model, style):
     client = openai.OpenAI(
